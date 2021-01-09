@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="./css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urna Eletronica</title>
+</head>
+<body>
+    <div class="urna">
+        <div class="screen">
+            <div class="d1">
+                <div class="INF">
+                    <div class="name">
+                        <span>SEU VOTO:</span>
+                    </div>
+                    <div class="cargo">
+                        <span>vereador</span>
+                    </div>
+                    <div class="numeros">
+                        <div class="num pisca"></div>
+                        <div class="num"></div>
+                    </div>
+                    <div class="informacoes">
+                        Nome: .....<br/>
+                        Partido> .... <br/>
+                        Vice:
+                    </div>
+                </div>
+                <div class="photo">
+                    <div class="img">
+                        <img src="./img/profile.png" alt=""/>
+                        prefeito
+                    </div>
+                    <div class="img small">
+                        <img src="./img/profile.png" alt=""/>
+                        Vice-prefeito
+                    </div>
+                </div>
+            </div>
+            <div class="d2">
+                Aperte no teclado:<br/>
+                CONFIRMAR para confirmar seu voto<br/>
+                CORRIGIR para apagar numeros<br/>                
+            </div>
+        </div>
+        <div class="keyboard">
+            <div class="keyboard_line">
+                <div class="keyboard_button" onclick="clicou('7')">7</div>
+                <div class="keyboard_button" onclick="clicou('8')">8</div>
+                <div class="keyboard_button" onclick="clicou('9')">9</div>
+            </div>            
+            <div class="keyboard_line">
+                <div class="keyboard_button" onclick="clicou('4')">4</div>
+                <div class="keyboard_button" onclick="clicou('5')">5</div>
+                <div class="keyboard_button" onclick="clicou('6')">6</div>
+            </div>
+            <div class="keyboard_line">
+                <div class="keyboard_button" onclick="clicou('1')">1</div>
+                <div class="keyboard_button" onclick="clicou('2')">2</div>
+                <div class="keyboard_button" onclick="clicou('3')">3</div>
+            </div>
+            <div class="keyboard_line">
+                <div class="keyboard_button"onclick="clicou('0')">0</div>
+            </div> 
+            <div class="keyboard_line">
+                <div class="keyboard_buttonb" onclick="votobranco('Branco')">BRANCO</div>
+                <div class="keyboard_buttonn" onclick="corrigir('Corrigir')">CORRIGIR</div>
+                <div class="keyboard_buttonc" onclick="confirmar('Confirmar')">CONFIRMAR</div>
+            </div>                    
+        </div>
+    </div>
+    <script src='./js/etapas.js'></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

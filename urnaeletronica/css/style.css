@@ -1,0 +1,186 @@
+@keyframes pisca{
+    0% {opacity: 0.2;}
+    50% {opacity: 1;}
+    100% {opacity: 0.2;}
+}
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #383838;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.urna{
+    background: linear-gradient(to right,#cccc, #555555);
+    padding: 30px;
+    display: flex;
+    border: 2px solid black;
+    
+
+}
+/*tela*/
+.screen{
+    width: 500px;
+    height: 320px;
+    background: linear-gradient(to right,#e8e8e8, #c1c1c1);
+    border: 2px solid #555555;
+    display: flex;
+    flex-direction: column;
+}
+.d1{
+  flex: 1;
+  display: flex;
+}
+.INF{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    
+    
+}
+.photo{
+    width: 90px;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+}
+.img{
+    border: 1px solid black;
+    background-color: white;
+    text-align: center;
+    font-size: 14px;
+}
+.img img{
+    width: 100%;
+}
+.img.small{
+    width: 50%;
+    
+    font-size:12px;
+}
+.name{
+    height: 50px;  
+    display: flex;
+    align-items: center;
+}
+.cargo{
+    height:50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.num{
+    display: inline-block;
+    width: 30px;
+    height: 40px;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+}
+.pisca{
+    animation-name: pisca;
+    animation-duration:1s ;
+    animation-iteration-count: infinite;
+}
+
+.numeros{
+    height: 50px; 
+    align-items: center;
+    justify-content: center;
+}
+.informacoes{
+    flex: 1; 
+    line-height: 30px;
+}
+.d2{
+    height: 50px;
+    font-size: 14px;
+    border-top: 2px  solid black;
+    padding-left: 10px;
+
+}
+
+
+/*teclado*/
+.keyboard{
+    background-color: #403a3a;
+    margin-left: 30px;
+    
+}
+.keyboard_line{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.keyboard_button{
+    width: 70px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    cursor: pointer;
+    box-shadow: 3px 3px 0px #555555;
+}
+.keyboard_buttonb{
+    width: 90px;
+    height: 50px;
+    background-color: rgb(236, 234, 234);
+    color: rgb(3, 3, 3);
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    cursor: pointer;
+    box-shadow: 3px 3px 0px #555555;
+}
+.keyboard_buttonn{
+    width: 90px;
+    height: 50px;
+    background-color: rgb(245, 133, 4);
+    color: rgb(7, 7, 7);
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    cursor: pointer;
+    box-shadow: 3px 3px 0px #555555;
+}
+.keyboard_buttonc{
+    width: 100px;
+    height: 50px;
+    background-color: rgb(35, 184, 92);
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    cursor: pointer;
+    box-shadow: 3px 3px 0px #555555;
+}
+
+.aviso--grande{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.aviso--fim{
+    font-size: 70px;
+    font-weight: bold;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
